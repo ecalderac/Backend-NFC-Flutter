@@ -1,6 +1,6 @@
 
 
-#Backend de ejemplo para comenzar de 0
+#Backend del Proyecto con NFC y Flutter
 
 
 Reconstruir modulos de Node
