@@ -14,3 +14,4 @@ npm start
 node index.js
 ```
 
+Recomendacion para probar peticiones -> utilizar postman
