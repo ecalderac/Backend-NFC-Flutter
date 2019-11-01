@@ -8,6 +8,8 @@ var app = express();
 //cargar rutas
 
 var clase_routes = require('./routes/clase');
+var lista_routes = require('./routes/lista');
+var alumno_routes = require('./routes/alumno');
 /*
 var user_routes = require('./routes/user'); 
 var artist_routes = require('./routes/artist');
@@ -29,6 +31,8 @@ app.use((req, res, next) => {
 
 //rutas base
 app.use('/api', clase_routes); 
+app.use('/api', lista_routes); 
+app.use('/api', alumno_routes);
 
 /*app.use('/api', user_routes); //cada ruta tiene una api delante cuando se carga
 app.use('/api', artist_routes); 

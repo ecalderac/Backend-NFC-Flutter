@@ -5,7 +5,7 @@ var fs = require('fs');
 var mongoosePaginate = require('mongoose-pagination');
 var Clase = require('../models/clase');
 var Lista= require('../models/lista');
-var Alumno = require('../models/alumno');
+var Alumno = require('../models/alumno'); 
 
 function pruebas (req, res){
     res.status(200).send({
@@ -19,6 +19,8 @@ function saveClase(req, res){
 
     var params = req.body;
     clase.nombre = params.nombre;
+    clase.semestre = params.semestre;
+    clase.anio = params.anio;
     
     clase.save((err, claseStored) => {
         if(err){

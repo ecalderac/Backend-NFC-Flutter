@@ -8,7 +8,7 @@ var AlumnoSchema = Schema({
         apellido: String,
         rut: String,
         email: String,
-        telefono: String,
+        telefono: Number,
         carrera: String,
         image: String,
         lista: {type: Schema.ObjectId, ref: 'Lista'}

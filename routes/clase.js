@@ -1,13 +1,12 @@
 'user strict'
 
 var express = require('express');//cargando module de express
-var ClaseController = require('../controllers/clase'); //cargando el fichero q esta en user controllers
+var ClaseController = require('../controllers/clase'); //cargando el fichero q esta en clase controllers
 
 var api = express.Router(); //cargando el routes de express
 //var md_auth = require('../middlewares/authenticated');//cargando middleware
-
-var multipart = require('connect-multiparty'); //trabaja con la subida de ficheros
-var md_upload = multipart({ uploadDir: './uploads/users' });
+//var multipart = require('connect-multiparty'); //trabaja con la subida de ficheros
+//var md_upload = multipart({ uploadDir: './uploads/users' });
 
 //Rutas de Clase
 api.get('/probando-controlador', ClaseController.pruebas);
